@@ -16,7 +16,7 @@
 .home__name {
   font-size: 5rem;
   padding-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
 }
 .home__name .home__last {
@@ -107,6 +107,9 @@
 .nav .menu-nav__item.open {
   transform: translateX(0);
 }
+.nav .menu-nav__item.active > a {
+  color: #592f8f;
+}
 .nav .menu-nav__link {
   display: inline-block;
   font-size: 2rem;
@@ -150,6 +153,10 @@ h1, h2, h3 {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.text-secondary {
+  color: #ff652f;
 }
 
 header {
