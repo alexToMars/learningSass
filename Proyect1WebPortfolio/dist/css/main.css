@@ -196,7 +196,7 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(58, 34, 167, 0.9), rgba(58, 34, 167, 0.3)), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -223,12 +223,46 @@
 .projects__item img {
   width: 100%;
 }
+.projects__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ff652f;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.projects__item:hover::after {
+  top: 0;
+  opacity: 0.9;
+}
+.projects__item:hover .projects__btn {
+  opacity: 1;
+}
+.projects__btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+.projects__btn {
+  opacity: 0;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.projects__btn:hover {
+  color: #fff;
+}
 .projects .social-icons {
   display: flex;
   flex-direction: column;
-}
-.projects .social-icons i {
-  margin-bottom: 2vh;
 }
 .projects footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
