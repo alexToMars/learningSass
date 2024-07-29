@@ -179,11 +179,59 @@
 .about .jobs__job h6 {
   margin: 0.3rem 0;
 }
-
-.social-icons {
+.about .social-icons {
   display: flex;
   flex-direction: column;
-  padding-bottom: 5vh;
+}
+.about .social-icons i {
+  margin-bottom: 2vh;
+}
+.about footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.projects {
+  padding-bottom: 2rem;
+}
+.projects__bio-image {
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(58, 34, 167, 0.9), rgba(58, 34, 167, 0.3)), url("../img/model-1.jpg") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.projects__bio-image .text-secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.projects__items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.projects__item {
+  position: relative;
+  border-bottom: 5px solid #ff652f;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects__item img {
+  width: 100%;
+}
+.projects .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.projects .social-icons i {
+  margin-bottom: 2vh;
+}
+.projects footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
 body {
