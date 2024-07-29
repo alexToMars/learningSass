@@ -18,7 +18,7 @@ $color: #3a22a7; // Definición de la variable de color
         font-size: 5rem;
         padding-bottom: 1rem;
         margin-top: 1rem;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid set-text-color($primary_color);
 
         .home__last{
             color: $secondary_color;
